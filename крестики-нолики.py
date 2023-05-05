@@ -21,9 +21,9 @@ def ask():
         if len(position) == 3:
             if position[0].isdigit() and position[1].isdigit() and (position[2] == 'X' or position[2] == 'O'):
                 x, y, X_or_O = position
-        else:
-            print('Некорректный ввод')
-            break
+            else:
+                print('Некорректный ввод')
+                break
         x = int(x)
         y = int(y)
         if feild[x][y] == '-':
@@ -42,5 +42,8 @@ def ask():
 instruction()
 show_feild()
 ask()
+
+
+
 
 
